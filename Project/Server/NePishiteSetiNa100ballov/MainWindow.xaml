@@ -1,0 +1,64 @@
+﻿<Window x:Class="NePishiteSetiNa100ballov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NePishiteSetiNa100ballov"
+        mc:Ignorable="d"
+        Title="Server" Height="479.25" Width="1012" Closing="DataWindow_Closing" Loaded="Window_Loaded" Name="window" Icon="Resources\server.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="updateButton" HorizontalAlignment="Left" Margin="900,17,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="updateButton_Click" FontSize="18">
+            <Image Source="Resources/refresh64.png"/>
+        </Button>
+        <DataGrid x:Name="studentList" HorizontalAlignment="Left" Margin="3,70,0,0" VerticalAlignment="Top" Height="368" Width="991" CanUserResizeColumns="False" CanUserResizeRows="False" HorizontalScrollBarVisibility="Hidden" CanUserReorderColumns="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=LastName}" Width="174" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding Path=FirstName}" Width="174" />
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Path=SecondName}" Width="200" />
+                <DataGridTextColumn Header="Группа" Binding="{Binding Path=Group}" Width="125" />
+                <DataGridTemplateColumn Header="Оценка" Width="60">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox ItemsSource="{Binding Results}" SelectedItem="{Binding Path=Result}" SelectionChanged="ResultComboBoxChanged"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Попытки" Binding="{Binding Path=Attempts}" Width="60" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn Header="Последняя сессия" Width="140">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox ItemsSource="{Binding Session}" SelectedIndex ="0"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="DeleteStudent_Click">Удалить</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="saveChangesButton" HorizontalAlignment="Left" Margin="955,17,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="saveChangesButton_Click" FontSize="18">
+            <Image Source="Resources/save64.png"/>
+        </Button>
+        <Button x:Name="questionButton" HorizontalAlignment="Left" Margin="845,17,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="questionButton_Click" FontSize="18">
+            <Image Source="Resources/questions64.png"/>
+        </Button>
+        <local:ToggleButton x:Name="onButton" HorizontalAlignment="Left"  Margin="59,17,0,0" VerticalAlignment="Top" MouseLeftButtonDown="onButton_MouseLeftButtonDown" Height="38" Width="67" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="IPAddressLabel" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="132,13,0,0" VerticalAlignment="Top" Width="208" FontWeight="Bold" Content="255.255.255.255" HorizontalContentAlignment="Left" FontSize="24"/>
+        <Button x:Name="SettingsButton" HorizontalAlignment="Left" Margin="5,15,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="SettingsButton_Click">
+            <Image Source="Resources/settings64.png"/>
+        </Button>
+        <Button x:Name="lockButton_Copy" HorizontalAlignment="Left" Margin="790,17,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="lockButton_Click" FontSize="18">
+            <Image Source="Resources/lock64.png"/>
+        </Button>
+    </Grid>
+</Window>

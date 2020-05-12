@@ -1,0 +1,27 @@
+﻿<Window x:Class="NePishiteSetiNa100ballov.questionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NePishiteSetiNa100ballov"
+        mc:Ignorable="d"
+        Title="Вопросы" Height="480" Width="640" ResizeMode="CanMinimize" Icon="Resources\server.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListBox x:Name="listBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Left" Height="441" VerticalAlignment="Top" Width="624" Visibility="Visible">
+            <StackPanel Width="594" Orientation="Horizontal" Name="template" Visibility="Collapsed">
+                <TextBlock x:Name="questionText" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" HorizontalAlignment="Left" Width="529"/>
+                <Button x:Name="viewQuestion" VerticalAlignment="Top" RenderTransformOrigin="0.489,-0.7" HorizontalAlignment="Right" Height="21" Width="32" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="viewQuestion_Click">
+                    <Image Source="Resources/view-32.png" RenderTransformOrigin="0.518,0.5"/>
+                </Button>
+                <Button x:Name="EditQuestion" VerticalAlignment="Top" RenderTransformOrigin="0.489,-0.7" HorizontalAlignment="Right" Height="21" Width="32" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="EditQuestion_Click">
+                    <Image Source="Resources/edit-32.png"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Width="594" Orientation="Vertical" Name="addTemplate" Visibility="Collapsed">
+                <Button x:Name="AddQuestion" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.489,-0.7" Height="21" Width="594" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="{x:Null}" Click="AddQuestion_Click">
+                    <Image Source="Resources/add32.png"/>
+                </Button>
+            </StackPanel>
+        </ListBox>
+    </Grid>
+</Window>

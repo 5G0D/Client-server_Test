@@ -1,0 +1,28 @@
+C:\Programming\C#\Client\Client\bin\Debug\Client.exe.config
+C:\Programming\C#\Client\Client\bin\Debug\Client.exe
+C:\Programming\C#\Client\Client\bin\Debug\Client.pdb
+C:\Programming\C#\Client\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Programming\C#\Client\Client\obj\Debug\MainWindow.g.cs
+C:\Programming\C#\Client\Client\obj\Debug\App.g.cs
+C:\Programming\C#\Client\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Programming\C#\Client\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Programming\C#\Client\Client\obj\Debug\MainWindow.baml
+C:\Programming\C#\Client\Client\obj\Debug\Client.g.resources
+C:\Programming\C#\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Programming\C#\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Programming\C#\Client\Client\obj\Debug\Client.exe
+C:\Programming\C#\Client\Client\obj\Debug\Client.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\bin\Debug\Client.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\bin\Debug\Client.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\bin\Debug\Client.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\App.g.cs
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\MainWindow.baml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.g.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\Client\Client\obj\Debug\Client.pdb
